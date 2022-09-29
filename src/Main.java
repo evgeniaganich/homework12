@@ -6,13 +6,16 @@ public class Main {
 
         Book book1 = new Book("Gone With The Wind", author1, 1936);
         Book book2 = new Book("Terror", author2, 2007);
+        Book book3 = new Book("Terror", author2, 2007);
 
         System.out.println(book1.getBookName());
-        System.out.println(book1.getAuthor().getAuthorName());
+        System.out.println(book1.getAuthor().toString());
         System.out.println(book1.getPublishingYear());
 
         book1.setPublishingYear(1978);
         System.out.println(book1.getPublishingYear());
+        System.out.println(book2.equals(book3));
+        System.out.println(book1);
 
     }
 }
